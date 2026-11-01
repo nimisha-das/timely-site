@@ -14,7 +14,7 @@
   }
 
   /* Chrome Web Store link — set when the listing is live */
-  var CWS_URL = "";
+  var CWS_URL = "https://chromewebstore.google.com/detail/ajmphgmmbnecehajbmdakmobldibmmha";
   ["cws", "cws2", "cws3"].forEach(function (id) {
     var a = document.getElementById(id);
     if (!a) return;
