@@ -15,7 +15,7 @@
 
   /* Chrome Web Store link — set when the listing is live */
   var CWS_URL = "";
-  ["cws", "cws2"].forEach(function (id) {
+  ["cws", "cws2", "cws3"].forEach(function (id) {
     var a = document.getElementById(id);
     if (!a) return;
     if (CWS_URL) a.href = CWS_URL; else a.addEventListener("click", function (e) { e.preventDefault(); });

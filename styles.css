@@ -45,17 +45,20 @@ em.serif{font-family:var(--serif);font-style:italic;font-weight:400}
 @media(max-width:700px){.hero-foot{left:20px;right:20px;flex-direction:column;gap:14px;align-items:flex-start}}
 
 /* pain slab */
+.slab .wrap{max-width:1400px}
 .slab{background:var(--grey);border-radius:40px 40px 0 0;padding:120px 0 120px;margin-top:-40px;position:relative;z-index:3}
-.pain{background:#fff;border-radius:32px;padding:56px;max-width:1080px;margin:0 auto}
+.pain{background:#26301E;color:#fff;border-radius:32px;padding:80px 80px 72px;max-width:1350px;margin:0 auto}
 .chip{display:inline-block;font-size:12px;font-weight:500;background:rgba(119,144,95,.16);color:#4F6B34;border-radius:20px;padding:5px 12px}
-.pain h2{margin-top:20px;font-weight:400;font-size:38px;line-height:40px;letter-spacing:-1.1px;max-width:680px}
-.pain .muted{margin-top:14px;font-size:18px;color:var(--muted);font-weight:500}
-.pain hr{border:0;border-top:1px solid var(--line);margin:36px 0}
+.chip-d{}
+.pain .chip{background:rgba(160,190,130,.2);color:#C5DDB0;font-size:14px;padding:8px 18px}
+.pain h2{margin-top:36px;font-weight:400;font-size:38px;line-height:40px;letter-spacing:-1.1px;max-width:1000px;font-size:64px;line-height:62px;letter-spacing:-2.6px;font-weight:500}
+.pain .muted{margin-top:28px;font-size:24px;line-height:40px;max-width:660px;font-size:24px;color:rgba(255,255,255,.55);font-weight:300}
+.pain hr{border:0;border-top:1px solid rgba(255,255,255,.14);margin:44px 0 36px}
 .points{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-.points .n{width:28px;height:28px;border-radius:14px;background:var(--sage);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600}
-.points h3{margin-top:14px;font-size:18px;font-weight:500;line-height:1.25}
-.points p{margin-top:6px;font-size:15px;color:var(--muted)}
-@media(max-width:800px){.pain{padding:28px}.pain h2{font-size:28px;line-height:30px}.points{grid-template-columns:1fr}}
+.points .n{color:#B9D3A3;font-size:13px;font-weight:600}
+.points h3{margin-top:14px;font-size:22px;font-weight:600;line-height:1.25;letter-spacing:-.4px;color:#fff}
+.points p{margin-top:6px;font-size:16px;color:rgba(255,255,255,.55)}
+@media(max-width:800px){.pain{padding:28px}.pain h2{font-size:34px;line-height:36px;letter-spacing:-1.2px}.pain .muted{font-size:18px;line-height:28px}.points{grid-template-columns:1fr}}
 
 /* sticky tracks */
 .track{position:relative}
@@ -210,3 +213,7 @@ footer .legal a{color:#fff;text-decoration:none;font-weight:500}
   .feat-grid{gap:14px}.feat:not(.on){display:none}.feat h3{font-size:22px}
   .mock{min-height:300px;padding:18px}
 }
+
+.midcta{background:var(--page,#E7F0E2);padding:56px 0 8px}
+.midcta .wrap{display:flex;flex-direction:column;align-items:center;gap:14px;font-size:14px;color:rgba(38,48,30,.6)}
+.btn-sage{background:#6E8459;color:#fff;padding:14px 22px;font-size:17px}
