@@ -1,0 +1,87 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet"><link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"><title>Timely — see which project needs you today</title>
+<meta name="description" content="Timely is a free Chrome side-panel extension that shows which of your projects needs you today and which is quietly fading. Your data stays on your device.">
+</head><body>
+<div class="nav" id="nav"><div class="nav-inner"><div class="pill"><a class="logo" href="">Timely.</a><button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div><div class="menu"><a href="">Home</a><a href="privacy/">Privacy</a><a href="terms/">Terms</a></div></div></div>
+<header class="hero">
+  <img class="bg" alt="" src="assets/hero.jpg" onerror="this.onerror=null;this.src='https://framerusercontent.com/images/8Wj9YgCcBW3Tsxbz8AFKM2n1bs.jpg?width=2400&height=1600'">
+  <video autoplay muted loop playsinline preload="metadata"><source src="assets/hero.mp4" type="video/mp4"><source src="https://framerusercontent.com/assets/MLWPbW1dUQawJLhhun3dBwpgJak.mp4" type="video/mp4"></video>
+  <h1>Stop wondering which project you’re <em class="serif">forgetting.</em></h1>
+  <p class="lead">See which project needs you today. Do one small thing. Nothing goes quiet.</p>
+  <div class="hero-foot"><span>Free. Stays on your device.</span><a class="btn" href="#" id="cws"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#fff" stroke="#ddd"/><path d="M12 12 L21.5 7.5 A10 10 0 0 0 4 7 Z" fill="#EA4335"/><path d="M12 12 L4 7 A10 10 0 0 0 7.5 20.7 Z" fill="#34A853"/><path d="M12 12 L7.5 20.7 A10 10 0 0 0 21.5 7.5 Z" fill="#FBBC04"/><circle cx="12" cy="12" r="4" fill="#4285F4" stroke="#fff" stroke-width="1.5"/></svg> Get Extension</a></div>
+</header>
+
+<section class="slab" id="how"><div class="wrap"><div class="pain">
+  <span class="chip">Sound familiar?</span>
+  <h2>The worry isn’t about the work. It’s about what you can’t see.</h2>
+  <p class="muted">Projects don’t announce when they’re fading. They just go quiet.</p>
+  <hr>
+  <div class="points">
+    <div><div class="n">1</div><h3>See every project’s health</h3><p>Healthy, Needs attention or Dying. One glance.</p></div>
+    <div><div class="n">2</div><h3>Get one small to-do per project</h3><p>Today pulls only what’s ready to do.</p></div>
+    <div><div class="n">3</div><h3>Tick it. Watch it recover.</h3><p>Every to-do moves its project’s health.</p></div>
+  </div>
+</div></div></section>
+
+<section class="section-page" id="today"><div class="wrap" style="padding-top:120px">
+  <div class="track demo-track" id="demo">
+    <div class="sticky">
+      <div class="s-head"><h2 class="display" style="max-width:640px">Scroll to watch a dying project recover.</h2><p class="sub">Every to-do moves its project’s health. Scroll to see it.</p></div>
+      <div class="cards"><div class="card" id="todos"></div><div class="card" id="health"></div></div>
+      <div class="rail"><div id="demoRail"></div></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="section-page" id="features"><div class="wrap" style="padding-top:80px">
+  <div class="track feat-track" id="feat">
+    <div class="sticky">
+      <div class="s-head"><h2 class="display" style="max-width:640px">Built for people with five things going.</h2><p class="sub">Four small ideas that keep every project moving.</p></div>
+      <div class="feat-grid"><div class="feat-list" id="featList"></div><div class="mock" id="mock"></div></div>
+      <div class="dots" id="featDots"></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="cal" id="calendar"><div class="wrap"><div class="cal-grid" id="calGrid">
+  <div class="cal-copy">
+    <span class="chip">Optional · Google Calendar</span>
+    <h2 class="display">Your time is blocked.</h2>
+    <p class="t">Mark a to-do In Calendar and it lands in Google Calendar as a real block, all-day or timed. Done is done: you don’t plan twice.</p>
+    <div class="ticks"><div><span><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.4 2.4 4.6-5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Only to-dos you choose</div><div><span><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.4 2.4 4.6-5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>One-way: your other events stay private</div><div><span><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.4 2.4 4.6-5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Edits and deletes follow you</div></div>
+  </div>
+  <div class="calcard">
+    <div class="mhead" style="margin:0"><b>Thursday</b><span class="tag">Google Calendar</span></div>
+    <div class="allday">All-day · Submit portfolio</div>
+    <div class="hours" id="hours"></div>
+    <div class="blocked">4 h blocked for your projects</div>
+  </div>
+</div></div></section>
+
+<section class="assist" id="privacy"><div class="wrap">
+  <div class="eyebrow">Private by default</div>
+  <h2 class="display">Your plans stay yours.</h2>
+  <div class="pcards">
+    <div class="pcard"><small>Private</small><h3>On your device</h3><p>Stored in your browser. Nothing is sent anywhere.</p></div>
+    <div class="pcard"><small>Simple</small><h3>No account</h3><p>No sign-up. No analytics. No tracking.</p></div>
+    <div class="pcard"><small>Safe</small><h3>Back up any time</h3><p>Export one file. Restore it whenever you need.</p></div>
+  </div>
+  <div class="cta"><h2>Put the worry down.</h2><p>Free. Everything stays on your device.</p><a class="btn" href="#" id="cws2"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#fff" stroke="#ddd"/><path d="M12 12 L21.5 7.5 A10 10 0 0 0 4 7 Z" fill="#EA4335"/><path d="M12 12 L4 7 A10 10 0 0 0 7.5 20.7 Z" fill="#34A853"/><path d="M12 12 L7.5 20.7 A10 10 0 0 0 21.5 7.5 Z" fill="#FBBC04"/><circle cx="12" cy="12" r="4" fill="#4285F4" stroke="#fff" stroke-width="1.5"/></svg> Get Extension</a></div>
+</div></section>
+
+<section class="faq" id="faq"><div class="wrap">
+  <span class="chip">FAQ</span>
+  <h2 class="display">Honest answers, kept short.</h2>
+  <div style="margin-top:32px;max-width:820px">
+    <details><summary>How is this different from a to-do list?</summary><p>A to-do list keeps adding up. Timely bundles to-dos under their projects, shows each project’s health, and puts one small thing on today.</p></details>
+    <details><summary>Do I need an account?</summary><p>No. There’s no sign-up, no analytics and no tracking.</p></details>
+    <details><summary>Where is my data?</summary><p>In your browser, on your device. Nothing is sent anywhere. Export a backup file any time and restore it whenever you need to.</p></details>
+    <details><summary>What does Google Calendar do?</summary><p>It’s optional and one-way. Only to-dos you mark In Calendar are added, and Timely never reads your other events. See the <a href="privacy/">privacy policy</a>.</p></details>
+    <details><summary>Does it only work in Chrome?</summary><p>Yes. Timely lives in Chrome’s side panel.</p></details>
+  </div>
+</div></section>
+
+<section class="outro"><div class="wrap"><h2>Which project<br>needs you today?</h2></div></section>
+<footer><div class="top"><div class="brand"><b>Timely.</b><span>Quiet by design.</span></div><nav><h4>Information</h4><a href="">Home</a><a href="#how">How it works</a><a href="#faq">FAQ</a></nav></div><div class="legal"><span>© 2026 Timely. All rights reserved.</span><a href="privacy/">Privacy</a><a href="terms/">Terms</a></div></footer>
+<script src="main.js"></script>
+</body></html>
